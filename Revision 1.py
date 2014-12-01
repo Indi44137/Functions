@@ -2,18 +2,14 @@
 #30/11/2014
 #Revision task 1
 
+import math
 
-def integer():
-    number_of_symbols = int(input("Please enter the amount of symbols you would like to be displayed: "))
-    return number_of_symbols
-
-def symbol():
-    sign = str(input("Please enter the synbol you would like to be displayed: "))
-    return sign
-
-def OutputSymbols(number_of_symbols, sign):
-    character_symbol = symbol()
-    number_of_symbols = integer()
-    print(character_symbol * number_of_symbols) 
+symbol = str(input("Please enter a symbol here: "))
+integer = int(input("Please enter the amount of times you would like the symbol to be displayed:" ))
     
-print(OutputSymbols(number_of_symbols, sign))
+def outputsymbols():
+    for count in range(1):
+        answer = integer * symbol
+        print(answer) 
+    
+outputsymbols()
