@@ -27,13 +27,12 @@ def work_details():
 
 def display_total_pay(total_pay):
     print(total_pay)
-    return total_pay
 
 def calculate_pay():
     hours, pay = work_details()
     total_pay = calculate_total_pay(hours, pay)
-    display_pay = display_total_pay(total_pay)
-    return total_pay
+    display_total_pay(total_pay)
+   
 
 #main program
 calculate_pay()
